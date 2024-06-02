@@ -116,7 +116,7 @@ Define o nome de usuário, senha e o nome do banco de dados. 
 
 Cria uma string de conexão para se conectar ao MongoDB com autenticação. 
 
-![](Aspose.Words.1a3c6c5b-2362-4f7f-a89c-f165e930a514.001.png) 
+<img src="/imagens/fig1.png"> 
 
 **2.4 Conectar ao MongoDB**: 
 
@@ -126,7 +126,7 @@ Cria uma string de conexão para se conectar ao MongoDB com autenticação. 
 
 **core\_collection** e **extended\_collection**: Seleciona as coleções **core\_data** e **extended\_data**, respectivamente. 
 
-![](Aspose.Words.1a3c6c5b-2362-4f7f-a89c-f165e930a514.002.png)
+<img src="/imagens/fig2.png"> 
 
 **2.5 Geração de Dados Simulados:** 
 
@@ -140,23 +140,21 @@ Criamos um dicionário **core\_data** com os detalhes principais do produto. 
 
 Criamos um dicionário **extended\_data** com detalhes adicionais do produto, incluindo o histórico de vendas. 
 
-![](Aspose.Words.1a3c6c5b-2362-4f7f-a89c-f165e930a514.003.png)
+<img src="/imagens/fig3.png"> 
 
 **2.6 Resultado:** 
 
 O banco **surpermarket** foi criado com as respectivas coleções 
 
-![](Aspose.Words.1a3c6c5b-2362-4f7f-a89c-f165e930a514.004.png)   
+<img src="/imagens/fig4.png"> 
 
 Coleção **core\_data** com **610076** dados. 
 
-![](Aspose.Words.1a3c6c5b-2362-4f7f-a89c-f165e930a514.005.png)
-
-
+<img src="/imagens/fig5.png"> 
 
 Coleção **extended\_data** com **610075** dados. 
 
-![](Aspose.Words.1a3c6c5b-2362-4f7f-a89c-f165e930a514.006.png)
+<img src="/imagens/fig6.png"> 
 
 **Passo 3: Testes de Desempenho** 
 
@@ -166,7 +164,8 @@ Teste a eficiência das consultas de estoque utilizando diferentes filtros e ín
 
 **Exemplo usado:** 
 
-![](Aspose.Words.1a3c6c5b-2362-4f7f-a89c-f165e930a514.007.png)
+<img src="/imagens/fig7.png"> 
+
 
 // **Exemplo de consulta de estoque** 
 
@@ -174,7 +173,8 @@ db.core\_data.find({ store\_id: "d5e12b31-cbd0-482c-bfa7-8dcd5b6d6dec", product\
 
 **Resultado:** 
 
-![](Aspose.Words.1a3c6c5b-2362-4f7f-a89c-f165e930a514.008.png)
+<img src="/imagens/fig8.png"> 
+
 
 **3.2 Atualizações de Inventário*** 
 
@@ -189,6 +189,8 @@ db.core\_data.updateOne( 
 { $set: { quantity: 50, last\_updated: new Date() } }) 
 
 **Resultado:** 
+
+<img src="/imagens/fig9.png"> 
 
 **3.3 Adição de Novas Filiais** 
 
@@ -216,7 +218,13 @@ db.core\_data.insertMany([ 
 
 **Resultado**: 
 
+<img src="/imagens/fig11.png">
+
+<img src="/imagens/fig10.png"> 
+
 Consultei o estoque
+ 
+<img src="/imagens/fig12.png"> 
 
 **Conclusão** 
 
